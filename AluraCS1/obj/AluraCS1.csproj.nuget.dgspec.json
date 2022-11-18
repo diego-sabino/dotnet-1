@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/zephyr/Projects/AluraCS1/AluraCS1/AluraCS1.csproj": {}
+    "/Users/zephyr/Documents/Alura/dotnet/dotnet1/AluraCS1/AluraCS1.csproj": {}
   },
   "projects": {
-    "/Users/zephyr/Projects/AluraCS1/AluraCS1/AluraCS1.csproj": {
+    "/Users/zephyr/Documents/Alura/dotnet/dotnet1/AluraCS1/AluraCS1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/zephyr/Projects/AluraCS1/AluraCS1/AluraCS1.csproj",
+        "projectUniqueName": "/Users/zephyr/Documents/Alura/dotnet/dotnet1/AluraCS1/AluraCS1.csproj",
         "projectName": "AluraCS1",
-        "projectPath": "/Users/zephyr/Projects/AluraCS1/AluraCS1/AluraCS1.csproj",
+        "projectPath": "/Users/zephyr/Documents/Alura/dotnet/dotnet1/AluraCS1/AluraCS1.csproj",
         "packagesPath": "/Users/zephyr/.nuget/packages/",
-        "outputPath": "/Users/zephyr/Projects/AluraCS1/AluraCS1/obj/",
+        "outputPath": "/Users/zephyr/Documents/Alura/dotnet/dotnet1/AluraCS1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/zephyr/.nuget/NuGet/NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PariDskphFwor1WHhU/5nqzSMoppTXxkwnW5uDynIKBGqfadpY6gBXLy5qxTc53HJg2EGT7lZe3xraPAdebe7A==",
+  "dgSpecHash": "iOaylt1i78Hl2Zlpv7kGQeXte+3+n8ALjNWoVz/+SQrA9ZRRS94CbjC7DKqV0nbF8cmDv837oOjwonRi5ZoG8Q==",
   "success": true,
-  "projectFilePath": "/Users/zephyr/Projects/AluraCS1/AluraCS1/AluraCS1.csproj",
+  "projectFilePath": "/Users/zephyr/Documents/Alura/dotnet/dotnet1/AluraCS1/AluraCS1.csproj",
   "expectedPackageFiles": [
     "/Users/zephyr/.nuget/packages/microsoft.aspnetcore.openapi/7.0.0/microsoft.aspnetcore.openapi.7.0.0.nupkg.sha512",
     "/Users/zephyr/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
