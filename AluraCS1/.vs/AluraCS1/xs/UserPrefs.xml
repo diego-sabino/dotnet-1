@@ -1,10 +1,29 @@
-﻿<Properties StartupConfiguration="{37C5FF07-CBD9-4EDB-8F68-71EE0FADFDE0}|https">
-  <MonoDevelop.Ide.Workbench />
+﻿<Properties StartupConfiguration="{37C5FF07-CBD9-4EDB-8F68-71EE0FADFDE0}|http">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.AluraCS1 PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/MoviesController.cs">
+    <Files>
+      <File FileName="Controllers/FilmeController.cs" Line="32" Column="4" />
+      <File FileName="Models/Filme.cs" Line="21" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AluraCS1" expanded="True">
+            <Node name="AluraCS1" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Movie.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.AluraCS1 PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
