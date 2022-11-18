@@ -15,8 +15,15 @@ namespace FilmesAPI.Controllers
 
 		public void AddFilme([FromBody] Filme filme)
 		{
+			filme.id += 1;
 			filmes.Add(filme);
-			Console.WriteLine(filme.Titulo);
+		}
+
+		[HttpGet]
+
+		public IEnumerable<Filme> RecuperaFilme()
+		{
+			return filmes;
 		}
 	}
 }
