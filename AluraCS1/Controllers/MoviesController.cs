@@ -18,6 +18,7 @@ namespace MoviesAPI.Controllers
             movie.id += 1;
             movies.Add(movie);
         }
+
         [HttpGet]
 
 		public IEnumerable<Movie> GetAllMovies()
@@ -25,9 +26,11 @@ namespace MoviesAPI.Controllers
 			return movies;
 		}
 
-		public Movie GetMovieById()
-		{
+        [HttpGet("{id}")]
 
+        public Movie GetMovieById(int id)
+		{
+			return movies.FirstOrDefault(movie => movie.id == id);
 		}
 	}
 }
