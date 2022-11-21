@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using donet1_5._0.Data;
+using MoviesApi.Data;
 
 namespace donet1_5._0.Migrations
 {

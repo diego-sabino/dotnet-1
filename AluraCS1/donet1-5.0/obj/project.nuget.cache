@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ja+1ZG6POQlWWCHM0QqW64vLOhdcJk0Jw/sv669PaB15uwvMjd9/1Ow/OJr4MGHuP1ihOQpdu/RktUXLNfojEQ==",
+  "dgSpecHash": "1+yEnJ6I6aeVw5nY9fgB+LtQ7BWD/ZGjHc2blbOzcOp5QMp0D/PpDBkCkC0fmVdzlG7Z/T5Sabex1f4nLT96Dw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Diego\\source\\repos\\donet1-5.0\\donet1-5.0\\donet1-5.0.csproj",
+  "projectFilePath": "D:\\github\\dotnet1\\AluraCS1\\donet1-5.0\\donet1-5.0.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Diego\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\Diego\\.nuget\\packages\\google.protobuf\\3.19.4\\google.protobuf.3.19.4.nupkg.sha512",
