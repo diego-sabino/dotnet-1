@@ -94,3 +94,9 @@ D:\github\dotnet1\AluraCS1\donet1-5.0\obj\Debug\net5.0\scopedcss\bundle\donet1-5
 D:\github\dotnet1\AluraCS1\donet1-5.0\obj\Debug\net5.0\donet1-5.0.RazorTargetAssemblyInfo.cache
 D:\github\dotnet1\AluraCS1\donet1-5.0\obj\Debug\net5.0\donet1-5.0.csproj.CopyComplete
 D:\github\dotnet1\AluraCS1\donet1-5.0\obj\Debug\net5.0\donet1-5.0.genruntimeconfig.cache
+D:\github\dotnet1\AluraCS1\donet1-5.0\bin\Debug\net5.0\AutoMapper.dll
+D:\github\dotnet1\AluraCS1\donet1-5.0\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\github\dotnet1\AluraCS1\donet1-5.0\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\github\dotnet1\AluraCS1\donet1-5.0\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+D:\github\dotnet1\AluraCS1\donet1-5.0\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+D:\github\dotnet1\AluraCS1\donet1-5.0\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll

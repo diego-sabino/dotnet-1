@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
 using MoviesApi.Data;
+using MoviesApi.Data.Dtos;
+using AutoMapper;
 
 namespace MoviesAPI.Controllers
 {
@@ -13,16 +15,20 @@ namespace MoviesAPI.Controllers
 	public class FilmeController : ControllerBase
 	{
 		private MovieContext _context;
+		private IMapper _mapper;
 
-        public FilmeController(MovieContext context)
+        public FilmeController(MovieContext context, IMapper mapper)
         {
 			_context = context;
+			_mapper = mapper;
         }
 
 		[HttpPost]
 
-		public IActionResult CreateMovie([FromBody] Movie movie)
+		public IActionResult CreateMovie([FromBody] CreateMovieDto movieDto)
 		{
+			Movie movie = _mapper.Map<Movie>(movieDto);
+
 			_context.Movies.Add(movie);
 			_context.SaveChanges();
 			return CreatedAtAction(nameof(GetMovieById), new { Id = movie.id }, movie);
@@ -43,23 +49,21 @@ namespace MoviesAPI.Controllers
 
 			if (movie != null)
 			{
-				return Ok(movie);
+				ReadMovieDto movieDto = _mapper.Map<ReadMovieDto>(movie);
+				return Ok(movieDto);
 			}
 			return NotFound();
 		}
 
 		[HttpPut("{id}")]
-		public IActionResult UpdateMovie(int id, [FromBody] Movie newMovie)
+		public IActionResult UpdateMovie(int id, [FromBody] UpdateMovieDto movieDto)
         {
 			Movie movie = _context.Movies.FirstOrDefault(movie => movie.id == id);
 			if (movie == null)
             {
 				return NotFound();
             }
-			movie.Title = newMovie.Title;
-			movie.Director = newMovie.Director;
-			movie.Genre = newMovie.Genre;
-			movie.Duration = newMovie.Duration;
+			_mapper.Map(movieDto, movie);
 			_context.SaveChanges();
 			return NoContent();
         }
