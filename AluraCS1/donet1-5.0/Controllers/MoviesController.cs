@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
 using MoviesApi.Data;
+using MoviesApi.Data.Dtos;
 
 namespace MoviesAPI.Controllers
 {
@@ -21,8 +22,16 @@ namespace MoviesAPI.Controllers
 
 		[HttpPost]
 
-		public IActionResult CreateMovie([FromBody] Movie movie)
+		public IActionResult CreateMovie([FromBody] CreateMovieDto movieDto)
 		{
+			Movie movie = new Movie
+			{
+				Title = movieDto.Title,
+				Genre = movieDto.Genre,
+				Duration = movieDto.Duration,
+				Director = movieDto.Director
+			};
+
 			_context.Movies.Add(movie);
 			_context.SaveChanges();
 			return CreatedAtAction(nameof(GetMovieById), new { Id = movie.id }, movie);
@@ -43,23 +52,32 @@ namespace MoviesAPI.Controllers
 
 			if (movie != null)
 			{
-				return Ok(movie);
+				ReadMovieDto movieDto = new ReadMovieDto
+				{
+					id = movie.id,
+					Title = movie.Title,
+					Genre = movie.Genre,
+					Duration = movie.Duration,
+					Director = movie.Director,
+					ConsultHour = DateTime.Now,
+				};
+				return Ok(movieDto);
 			}
 			return NotFound();
 		}
 
 		[HttpPut("{id}")]
-		public IActionResult UpdateMovie(int id, [FromBody] Movie newMovie)
+		public IActionResult UpdateMovie(int id, [FromBody] ReadMovieDto movieDto)
         {
 			Movie movie = _context.Movies.FirstOrDefault(movie => movie.id == id);
 			if (movie == null)
             {
 				return NotFound();
             }
-			movie.Title = newMovie.Title;
-			movie.Director = newMovie.Director;
-			movie.Genre = newMovie.Genre;
-			movie.Duration = newMovie.Duration;
+			movie.Title = movieDto.Title;
+			movie.Director = movieDto.Director;
+			movie.Genre = movieDto.Genre;
+			movie.Duration = movieDto.Duration;
 			_context.SaveChanges();
 			return NoContent();
         }
